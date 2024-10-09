@@ -1,0 +1,62 @@
+/*  
+ * Comments in CSS begin with a forward slash and an asterisk, and end with an
+ * asterisk and a forward slash. You don’t need an asterisk on every line, but
+ * we find the comment easier to read that way.
+ * 
+ * Properties set for the body apply to the whole page unless overridden 
+ * */
+body {
+    <p 
+    background-color: blue;
+    color: sienna;
+}
+/*
+ * You can set properties for multiple elements at once; 
+ * separate the selectors with commas
+ * */
+
+table,
+tr,
+th,
+td {
+    border: 4px gray solid;
+}
+/* 
+ * You can specify properties for the same selector in different places;
+ * here we add a border-collapse property for table, but not for other
+ * table-related elements
+ */
+table {
+    border-collapse: collapse;
+}
+/* 
+ * And here we say that cells have a bit of padding, but other table-related
+ * elements don't
+ */
+th,
+td {
+    padding: .5em;
+}
+/* 
+ * Instead of using <hr/> to create horizontal rule between sections, we
+ * can use the border-top property
+ */
+section {
+    border-top: 1px black solid;
+}
+/* 
+ * <em> is rendered as italic by default; we augment that by setting a 
+ * background color
+ */
+em {
+    background-color: lightblue;
+}
+/* 
+ * If you set one dimension of an image and tell it to autosize, it will
+ * set the other for you proportionally. We set a max-width property so
+ * that the cells will all be the same width, since the images aren’t; the
+ * height scales proportionally by default.
+ */
+img {
+    max-width: 1in;
+}

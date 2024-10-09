@@ -1,0 +1,54 @@
+
+body {
+    background-color: orange;
+    color: black;
+}
+h1 {
+    font-size:50px;
+    color: black;
+   
+}
+h2 {
+    font-size: 40px;
+    color: black;
+    border: 3px solid blue;
+}
+h3 {
+    font-size: 30px;
+    color: black;
+}
+
+ul li {
+    color: black;
+    font-size: 30px;
+}
+p {
+    font-size:30px;
+    color:black;
+    flex-basis: 10%;
+    text-align: center;
+}
+.column-container {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid red;
+}
+.row-container {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid purple;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;}
+.stage_directions:hover {
+    background-color: lightgray;
+}
+div {
+    width:500px;
+    margin:auto;
+    display: inline-block;
+}
+.mycontainer div {
+    width: 33%;
+    float: left;
+}
